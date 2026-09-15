@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Pathfinder - Maharashtra Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="chatbot-header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <h1>ElevateGrad Careers</h1>
+                </div>
+                <p class="header-subtitle">Navigating Your Path After 12th Standard</p>
+            </div>
+        </header>
+
+        <!-- Main Chat Interface -->
+        <main class="chat-container">
+            <!-- Quick Action Buttons -->
+            <section class="quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <button class="btn btn--secondary quick-btn" data-action="engineering">
+                        🔧 Engineering Options
+                    </button>
+                    <button class="btn btn--secondary quick-btn" data-action="medical">
+                        🏥 Medical Careers
+                    </button>
+                    <button class="btn btn--secondary quick-btn" data-action="commerce">
+                        💼 Commerce Paths
+                    </button>
+                    <button class="btn btn--secondary quick-btn" data-action="arts">
+                        🎨 Arts Opportunities
+                    </button>
+                    <button class="btn btn--secondary quick-btn" data-action="exams">
+                        📅 Entrance Exam Calendar
+                    </button>
+                    <button class="btn btn--secondary quick-btn" data-action="skills">
+                        🛠️ Skill Development Programs
+                    </button>
+                    <button class="btn btn--secondary quick-btn" data-action="colleges">
+                        🏛️ College Finder
+                    </button>
+                    <button class="btn btn--secondary quick-btn" data-action="salary">
+                        💰 Salary Guide
+                    </button>
+                </div>
+            </section>
+
+            <!-- Chat Messages Area -->
+            <section class="chat-messages" id="chatMessages">
+                <!-- Messages will be dynamically added here -->
+            </section>
+
+            <!-- Typing Indicator -->
+            <div class="typing-indicator hidden" id="typingIndicator">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span>Pathfinder is typing...</span>
+            </div>
+
+            <!-- Chat Input -->
+            <section class="chat-input">
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        class="form-control chat-text-input" 
+                        id="messageInput" 
+                        placeholder="Ask me about careers, colleges, entrance exams..."
+                        maxlength="500"
+                    >
+                    <button class="btn btn--primary send-btn" id="sendButton">
+                        <span class="send-icon">📤</span>
+                        Send
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Action Buttons (Bottom) -->
+        <section class="action-controls">
+            <button class="btn btn--outline action-control-btn" id="clearChat">
+                🗑️ Clear Chat
+            </button>
+            <button class="btn btn--outline action-control-btn" id="helpButton">
+                ❓ Help
+            </button>
+            <button class="btn btn--outline action-control-btn" id="shareChat">
+                📱 Share
+            </button>
+        </section>
+
+        <!-- Help Modal -->
+        <div class="modal hidden" id="helpModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>How to Use Career Pathfinder</h3>
+                    <button class="modal-close" id="closeHelp">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="help-section">
+                        <h4>🎯 Getting Started</h4>
+                        <p>Click on quick action buttons or type your questions about careers after 12th standard.</p>
+                    </div>
+                    <div class="help-section">
+                        <h4>💬 Sample Questions</h4>
+                        <ul>
+                            <li>"What engineering options are available?"</li>
+                            <li>"Tell me about medical entrance exams"</li>
+                            <li>"Which colleges are best for commerce?"</li>
+                            <li>"What are the salary ranges for different careers?"</li>
+                        </ul>
+                    </div>
+                    <div class="help-section">
+                        <h4>📚 Topics Covered</h4>
+                        <p>Stream-specific career guidance, entrance exam information, college details, salary expectations, and skill development programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
